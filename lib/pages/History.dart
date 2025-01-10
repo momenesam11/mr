@@ -19,22 +19,25 @@ class History_screen extends StatelessWidget {
             height: 24,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(5), color: Colors.white),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5),
-              child: Row(
-                spacing: 2,
-                children: [
-                  Text(
-                    'CVB',
-                    style: TextStyle(
-                        color: Color(0xff28CA2E), fontWeight: FontWeight.bold),
-                  ),
-                  Icon(
-                    Icons.arrow_drop_down_rounded,
-                    size: 25,
-                    color: Color(0xff28CA2E),
-                  ),
-                ],
+            child: Container(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 5),
+                child: Row(
+                  spacing: 2,
+                  children: [
+                    Text(
+                      'CVB',
+                      style: TextStyle(
+                          color: Color(0xff28CA2E),
+                          fontWeight: FontWeight.bold),
+                    ),
+                    Icon(
+                      Icons.arrow_drop_down_rounded,
+                      size: 25,
+                      color: Color(0xff28CA2E),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
