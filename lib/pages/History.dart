@@ -8,10 +8,6 @@ class History_screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(
-          color: Colors.white, // لون زر العودة للخلف
-        ),
-        backgroundColor: Color(0xff28CA2E),
         actions: [
           Container(
             margin: EdgeInsets.only(right: 20),
@@ -42,6 +38,10 @@ class History_screen extends StatelessWidget {
             ),
           ),
         ],
+        backgroundColor: Color(0xff28CA2E),
+        iconTheme: IconThemeData(
+          color: Colors.white, // لون زر العودة للخلف
+        ),
         title: Text(
           'History',
           style: TextStyle(
@@ -102,7 +102,7 @@ class History_screen extends StatelessWidget {
               height: 12,
             ),
             Row(
-              spacing: 15,
+              spacing: 6,
               children: [
                 Container(
                   width: 110,
@@ -254,7 +254,7 @@ class History_screen extends StatelessWidget {
               ],
             ),
             Row(
-              spacing: 15,
+              spacing: 6,
               children: [
                 Container(
                   width: 110,

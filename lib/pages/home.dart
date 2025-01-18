@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mr/pages/History.dart';
+import 'package:mr/pages/feedback.dart';
+import 'package:mr/pages/measure.dart';
 
 class Homepage_screen extends StatelessWidget {
   const Homepage_screen({super.key});
@@ -71,7 +73,7 @@ class Homepage_screen extends StatelessWidget {
               height: 15,
             ),
             Row(
-              spacing: 15,
+              spacing: 6,
               children: [
                 Container(
                   width: 110,
@@ -223,7 +225,7 @@ class Homepage_screen extends StatelessWidget {
               ],
             ),
             Row(
-              spacing: 15,
+              spacing: 6,
               children: [
                 Container(
                   width: 110,
@@ -347,7 +349,7 @@ class Homepage_screen extends StatelessWidget {
               height: 15,
             ),
             Row(
-              spacing: 15,
+              spacing: 6,
               children: [
                 Container(
                   width: 110,
@@ -666,7 +668,13 @@ class Homepage_screen extends StatelessWidget {
               height: 5,
             ),
             MaterialButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) {
+                    return Measure_scrren();
+                  }),
+                );
+              },
               splashColor: Colors.transparent,
               highlightColor: Colors.transparent,
               elevation: 0,
@@ -698,7 +706,13 @@ class Homepage_screen extends StatelessWidget {
               height: 5,
             ),
             TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) {
+                      return Feedback_scrren();
+                    }),
+                  );
+                },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
